@@ -1,8 +1,8 @@
 # <img style="float: left;" src="assets/pictures/logo.png" width="40" /> &nbsp; SCYCLONE
 ![interface](assets/pictures/interface.png)
 
-**Scyclone** is an audio plugin that utilizes **neural timbre transfer** technology to offer a new approach to audio production. This plugin builds upon [RAVE's](https://github.com/acids-ircam/RAVE) methodology, a realtime audio variational auto encoder, facilitating neural timbre transfer in both single and couple inference mode. <br /><br />
-This enables a new artificial layering technique to be applied on the incoming signal in creating richer drum pallets, fuller atmospheres or simply transferring the timbre of the raw signal to another sound pallet. To further control the behaviour and production of the neural networks, we have internally equipped the plugin with signal processings modules allowing the user to shape, control and embellish the  source and target timbres.
+**Scyclone** is an audio plugin that utilizes **neural timbre transfer** technology to offer a new approach to audio production. The plugin builds upon [RAVE](https://github.com/acids-ircam/RAVE) methodology, a realtime audio variational auto encoder, facilitating neural timbre transfer in both single and couple inference mode. <br /><br />
+This enables a new artificial layering technique to be applied on the incoming signal in creating richer drum pallets, fuller atmospheres or simply transferring the timbre of the raw signal to another sound pallet. To further control the behaviour and production of the neural networks, we have internally equipped the plugin with signal processings modules allowing the user to shape, control and embellish the source and target timbres in a distinct manner.
 
 ## Overview
 ![signal_flow](assets/pictures/signal_flow_control.png)
@@ -11,7 +11,7 @@ This enables a new artificial layering technique to be applied on the incoming s
 
 **Signal flow**: <br />
 
-Scyclone provides an intuitive signal flow, empowering the user to seamlessly influence the model's synthesis with pre-processing effects:
+Scyclone offers an intuitive signal flow to seamlessly influence the model's synthesis with pre-processing effects:
 
 - Transient Controller: Shape the attack and sustain of the audio.
 - Low-/High-Cut Filter: Refine the frequency range of input audio for a more consistent sound
@@ -24,7 +24,7 @@ After the synthesis, you can further enrich the output with these additional mod
 
 **Trained models**:
 - Funk Drums: This model is trained on four hours of data inspired by the captivating sounds of vintage drum-breaks
-- Djembe: Trained on five hours of carefully compiled Djembe dataset. Three hours of djembe solo performances and two hours of one-shot recordings
+- Djembe: Trained on five hours of carefully compiled Djembe dataset (Three hours of djembe solo performances and two hours of one-shot recordings)
 
 ## Installation
 The plugin uses the onnxruntime libary to inference our neural networks. Unfortnuatly at the moment the library is is included as a shared library, so it is necessary to put the shared library next to the exectutable or in your system libaray path. 
